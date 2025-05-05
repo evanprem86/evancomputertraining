@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Evan Computers and Training Center - Admission Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Evan Computers and Training Center</h1>
+    <form id="admissionForm">
+      <input type="text" name="fullName" placeholder="Full Name" required />
+      <input type="text" name="fatherName" placeholder="Father's Name" required />
+      <input type="text" name="motherName" placeholder="Mother's Name" required />
+      <input type="date" name="dob" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="address" placeholder="Address" required></textarea>
+      <select name="course" required>
+        <option value="">Select Course</option>
+        <option value="Basic Computer">Basic Computer</option>
+        <option value="Microsoft Office">Microsoft Office</option>
+        <option value="Graphics Design">Graphics Design</option>
+        <option value="Web Design">Web Design</option>
+      </select>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="Male" required /> Male</label>
+        <label><input type="radio" name="gender" value="Female" required /> Female</label>
+      </div>
+      <input type="file" name="photo" accept="image/*" />
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
